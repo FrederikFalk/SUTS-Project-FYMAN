@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<center><img src="img\Logo.png"></center>
+		<!--<img src="img\profile.png" alt="Avatar" id="profilePic">-->
+	</header>
+	<main>
+		<style>
+.mySlides {display:none;}
+		</style>
+		<h1>Featured Recipes</h1>
+		<div class="slideShow" style="max-width:500px">
+			<div class="mySlides">
+			<img class="slidePhoto" src="img\noodles.png"><p><h2><b>Name of the Recipie</b></h2> there should be the jgjdflg of what it is we have to do.</p></div>
+			<div class="mySlides">
+			<img class="slidePhoto" src="img\cheesecakeParfait - Copy.png"><p><h2><b>Name of the Recipie</b></h2> there should be the describtion of what it is we have to do.</p></div>
+			<div class="mySlides">
+			<img class="slidePhoto" src="img\Appetizer.png"><p><h2><b>Name of the Recipie</b></h2> there should be the describtion of what it is we have to do.</p>	</div>
+			<div class="mySlides">
+			<img class="slidePhoto" src="img\FishTacos.png"><p><h2><b>Name of the Recipie</b></h2> there should be the describtion of what it is we have to do.</p>	</div>
+			<div class="mySlides">
+			<img class="slidePhoto" src="img\Salmon.png"><p><h2><b>Name of the Recipie</b></h2> there should be the describtion of what it is we have to do.</p></div>
+		</div>
+		<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+
+		var photos = document.getElementsByClassName("slidePhoto");
+		//^^I gave each scrolling image the class name "slidePhoto" this line retrieves them for later -Isaiah
+
+		for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+
+		photos[myIndex-1].style.width = "192%"; //Change the number in quotes to change scrolling image width
+		photos[myIndex-1].style.height = "192%"; //Change the number in quotes to change scrolling image height
+    setTimeout(carousel, 5000); // Change image every 5 seconds
+}
+</script>
+<h1>Top Posts</h1>
+		<table cellpadding="2" cellspacing="0" style="width: 100%">
+			<tr>
+				<th><img src="img\image_from_ios.JPG" class="Round"><b>KeithBardsley</b></th>
+				<th><img src="img\21618044_1585477084805792_822079375556375842_n.JPG"class="Round"><b>JayceeHolmes</b></th>
+				<th><img src="img\29177367_10210036879833165_6333437871616063953_n.JPG" class="Round"><b>MelodyJaros</b></th>
+			</tr>
+			<tr>
+				<th><img src="img\IMG-0489.JPG"></th>
+				<th><img src="img\IMG-0487.JPG"></th>
+				<th><img src="img\IMG-0488.JPG"></th>
+			</tr>
+			<tr>
+				<th>
+					<p><b>Name of the Recipie</b> there should be the describtion of what it is we have to do.</p></th>
+					<th><p><b>Name of the Recipie</b> there should be the describtion of what it is we have to do.</p>
+				</th>
+				<th>
+					<p><b>Name of the Recipie</b> there should be the describtion of what it is we have to do.</p>
+				</th>
+			</tr>
+			<tr>
+				<th><img src="img\13254502_10154081282295295_4857791513449899654_n.JPG" class="Round"><b>JavierRonquillo</b></th>
+				<th><img src="img\20265032_2105529732798768_6224662867250039820_n.JPG" class="Round"><b>JohnMooseMiller</b></th>
+				<th><img src="img\35329499_2083264408353686_8248152059635826688_n.JPG" class="Round"><b>MelanieHarrison</b></th>
+			</tr>
+			<tr>
+				<th><img src="img\IMG-0492.JPG"></th>
+				<th><img src="img\IMG-0493.JPG"></th>
+				<th><img src="img\IMG-0494.JPG"></th>
+			</tr>
+			<tr>
+
+				<th>
+					<p><b>Name of the Recipie</b> there should be the describtion of what it is we have to do.</p>
+				</th>
+				<th>
+					<p><b>Name of the Recipie</b> there should be the describtion of what it is we have to do.</p>
+				</th>
+				<th>
+					<p><b>Name of the Recipie</b> there should be the describtion of what it is we have to do.</p>
+				</th>
+			</tr>
+		</table>
+		<h1>Challange of the Week</h1>
+			<img src="img\images.png">
+			<h2>Who can make the most colorful cake?</h2>
+			<p>For this weeks challange you must supment your most colorful cake, the most creative and colorful cake will win ________________. </p>
+			<br>
+			<br>
+
+	</main>
+	<footer>
+		<div class="navbar">
+			<a href="index.html">Home</a>
+			<a href="recipes.html"> Recipes</a>
+			<a href="grocery.html"> Grocery List</a>
+			<a href="socialMedia.html">Social</a>
+			<a href="profile.html"> Profile</a>
+
+		</div>
+	</footer>
+</body>
+</html>
